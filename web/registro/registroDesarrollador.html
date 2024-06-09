@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo.jpg">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <title>Registro desarrollador</title>
+</head>
+<body class="contenedor-principal">
+  <section class="contenedor-formulario-registro">
+    <!-- Logo del proyecto y el titulo -->
+    <div class="logo-y-titulo">
+      <img src="../images/logo.jpg" alt="" class="logo">
+      <h1>Crear cuenta <br/> para desarrolladores</h1>
+    </div>
+
+    <form action="" method="" id="formulario-desarrollador">
+      <div class="formulario-registro">
+        <div class="contexto-y-entrada">
+          <label for="nombreUsuario">Nombre*</label>
+          <input type="text" class="entrada-formulario-registro" id="nombreUsuario" autofocus required maxlength="60">
+          <span class="mensaje-error">Ingresa un nombre valido</span>
+        </div>
+
+        <div class="contexto-y-entrada">
+          <label for="apellidosUsuario">Apellidos*</label>
+          <input type="text" class="entrada-formulario-registro" id="apellidosUsuario" required maxlength="60">
+          <span class="mensaje-error">Ingresa apellidos validos</span>
+        </div>
+        
+        <div class="contexto-y-entrada">
+          <label for="correoUsuario">Correo electrónico*</label>
+          <input type="email" class="entrada-formulario-registro" id="correoUsuario" required maxlength="45">
+          <span class="mensaje-error">Ingresa un correo valido</span>
+        </div>
+        
+        <div class="contexto-y-entrada">
+          <label for="contraseniaUsuario">Contraseña*</label>
+          <input type="password" class="entrada-formulario-registro" id="contraseniaUsuario" required 
+                 minlength="8" maxlength="12">
+          <span class="mensaje-error">Ingresa una contraseña valida</span>
+        </div>
+        
+        <div class="contexto-y-entrada">
+          <label for="fechaNacimientoUsuario">Fecha de nacimiento*</label>
+          <input type="date" class="entrada-formulario-registro" id="fechaNacimientoUsuario"
+                 min="1924-01-01" required>
+          <span class="mensaje-error">Ingresa una fecha valida</span>
+        </div> 
+        
+        <div class="contexto-y-entrada">
+          <label for="generoUsuario">Genero*</label>
+          <select id="generoUsuario" class="entrada-formulario-registro">
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+            <option value="X" selected>Prefiero no especificarlo</option>
+          </select>
+        </div>
+        
+        <div class="contexto-y-entrada">
+          <label for="nicknameUsuario">Nombre de usuario*</label>
+          <input type="text" class="entrada-formulario-registro" id="nicknameUsuario" required maxlength="45">
+          <span class="mensaje-error">Ingresa un nombre de usuario valido</span>
+        </div>
+      </div>
+
+      <div class="botones-formulario-desarrollador">
+        <a href="../registro/registroEmpresa.html" class="cambio-formulario">¿Eres una empresa da click aquí?</a>
+        <a href="../index.html" class="cambio-formulario">¡Ya tengo una cuenta!</a>
+        <input type="submit" value="Registrate" class="boton-enviar">
+      </div>
+    </form>
+  </section>
+
+  <script src="../scripts/registroDesarrollador.js"></script>
+</body>
+</html>

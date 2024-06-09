@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo.jpg">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <title>Registro empresa</title>
+</head>
+<body class="contenedor-principal">
+  <section class="contenedor-formulario-registro">
+    <!-- Logo del proyecto y el titulo -->
+    <div class="logo-y-titulo">
+      <img src="../images/logo.jpg" alt="" class="logo">
+      <h1>Crear cuenta <br/> para empresas</h1>
+    </div>
+
+    <form action="" method="" id="formulario-empresa">
+      <div class="formulario-registro">
+        <div class="contexto-y-entrada">
+          <label for="razonSocialEmpresa">Razón social de la empresa*</label>
+          <input type="text" class="entrada-formulario-registro" id="razonSocialEmpresa" autofocus required maxlength="45">
+          <span class="mensaje-error">Ingresa una razón social valida</span>
+        </div>
+     
+        <div class="contexto-y-entrada">
+          <label for="correoEmpresa">Correo electrónico*</label>
+          <input type="email" class="entrada-formulario-registro" id="correoEmpresa" required maxlength="45">
+          <span class="mensaje-error">Ingresa un correo valido</span>
+        </div>
+        
+        <div class="contexto-y-entrada">
+          <label for="contraseniaEmpresa">Contraseña*</label>
+          <input type="password" class="entrada-formulario-registro" id="contraseniaEmpresa" required 
+                 minlength="8" maxlength="12">
+          <span class="mensaje-error">Ingresa una contraseña valida</span>
+        </div>
+        
+        <div class="contexto-y-entrada">
+          <label for="ubicacionEmpresa">Ubicación*</label>
+          <select id="ubicacionEmpresa" class="entrada-formulario-registro">
+            <option value="1" selected>México</option>
+            <option value="2">Estados Unidos</option>
+            <option value="3">Argentina</option>
+            <option value="4">Brasil</option>
+            <option value="5">Chile</option>
+            <option value="6">España</option>
+            <option value="7">Canada</option>
+            <option value="8">Francia</option>
+            <option value="9">Uruguay</option>
+            <option value="10">Otro</option>
+          </select>
+        </div> 
+        
+        <div class="contexto-y-entrada">
+          <label for="giroEmpresa">Giro de la empresa*</label>
+          <select id="giroEmpresa" class="entrada-formulario-registro">
+            <option value="1" selected>Desarrollo de software</option>
+            <option value="2">Públicidad</option>
+            <option value="3">Animación</option>
+            <option value="4">Entretenimiento</option>
+            <option value="5">Otro</option>
+          </select>
+        </div>
+        
+        <div class="contexto-y-entrada">
+          <label for="documentoValidacionEmpresa">Documentación para validar empresa (.pfd)*</label>
+          <input type="file" class="entrada-formulario-registro" id="archivoValidarEmpresa" required>
+          <span class="mensaje-error">Proporciona un archivo valido</span>
+        </div>
+      </div>
+
+      <div class="botones-formulario-desarrollador">
+        <a href="../registro/registroDesarrollador.html" class="cambio-formulario">¿Eres desarrollador da click aquí?</a>
+        <a href="../index.html" class="cambio-formulario">¡Ya tengo una cuenta!</a>
+        <input type="submit" value="Registrate" class="boton-enviar">
+      </div>
+    </form>
+  </section>
+
+  <script src="../scripts/registroEmpresa.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/logo.jpg">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <title>SoftIdea: Inicia sesión</title>
+</head>
+<body class="contenedor-principal">
+  <section class="contenedor-secundario">
+    <!-- Logo del proyecto y el titulo -->
+    <div class="logo-y-titulo">
+      <img src="./images/logo.jpg" alt="" class="logo">
+      <h1>Iniciar sesión</h1>
+    </div>
+
+    <!-- Formulario de inicio de sesión -->
+     <form action="" method="" class="form-login" id="form-login">
+      <label for="correoUsuario">Correo electrónico*</label>
+      <input type="text" class="entrada-form" id="correoUsuario" autofocus required>
+      <span class="mensaje-error">Ingresa un correo electrónico valido.</span>
+
+      <label for="contraseniaUsuario">Contraseña*</label>
+      <input type="password" class="entrada-form" id="contraseniaUsuario" required>
+      <span class="mensaje-error">Ingresa una contraseña valida.</span>
+      
+      <input type="submit" class="boton-enviar" value="Acceder"></input>
+
+      <div class="enlaces">
+        <a href="./registro/registroDesarrollador.html">¿No tienes cuenta? Registrate</a>
+        <a href="#">Olvidé mi contraseña</a>
+      </div>
+
+      <span class="mensaje-error">Correo electrónico o contraseña no validos</span>
+     </form>
+
+  </section>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
