@@ -98,4 +98,6 @@
 }
 
 /* Formulario para empresa */
-
+.btn-buscar {
+  margin: 0 0 0 20px;
+}
