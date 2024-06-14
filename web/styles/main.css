@@ -97,5 +97,10 @@
   gap: 15px;
 }
 
+/* Botón de busqueda */
 /* Formulario para empresa */
+.btn-buscar {
+  /* Margen a la izquierda para ajustar espacio con la barra de busqueda */
+  margin: 0 0 0 20px;
+}
 
