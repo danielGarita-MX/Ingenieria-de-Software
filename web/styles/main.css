@@ -1,5 +1,6 @@
 /* Estilos para el formulario de inicio de sesión */
 .contenedor-principal {
+  background-color: #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
